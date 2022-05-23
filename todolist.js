@@ -19,7 +19,7 @@ form.onsubmit = function (event) {
   button.value = "remove";
   newLine.appendChild(button);
   newLine.onsubmit = function () {
-    toDo.removeChild(newLine);
+    newLine.remove();
   };
   taskInput.value = "";
   i++;
