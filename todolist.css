@@ -50,6 +50,7 @@ ul {
     box-shadow: 0 0 1rem rgb(122, 122, 122);
     width: 20vw;
     height: 40vh;
+    list-style-type : none;
     overflow-y: auto;
     overflow-x: hidden;
 }
