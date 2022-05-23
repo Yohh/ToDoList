@@ -1,12 +1,13 @@
 const form = document.querySelector("form");
 const taskInput = document.querySelector("#taskInput");
 const toDo = document.querySelector("#toDo");
-const newTask = document.querySelector("li");
+i = 1;
 
 form.onsubmit = function (event) {
   event.preventDefault();
-  const newLine = document.createElement("div");
-  newLine.classList.add("newLine");
+  const newLine = document.createElement("form");
+  newLine.id = `newLine${i}`;
+  newLine.classList.add("newLine")
   newLine.style.display = "flex";
   newLine.style.justifyContent = "space-between";
   toDo.appendChild(newLine);
@@ -17,10 +18,9 @@ form.onsubmit = function (event) {
   button.type = "submit";
   button.value = "remove";
   newLine.appendChild(button);
-  newTask.onsubmit = function () {
-    toDo.removeChild(newTask);
+  newLine.onsubmit = function () {
+    toDo.removeChild(newLine);
   };
   taskInput.value = "";
+  i++;
 };
-
-// button.onclick = toDo.removeChild(newTask);
