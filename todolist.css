@@ -36,6 +36,19 @@ form {
     box-shadow: 0 0 1rem rgb(122, 122, 122);
 }
 
+#send {
+    background-color: rgb(230, 113, 46);
+    border: none;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    background-image: url("/icon_send.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 2rem;
+    height: 2rem;
+}
+
 h2 {
     background-color: rgb(255, 207, 134);
     padding: 1rem;
@@ -58,4 +71,17 @@ ul {
 .newLine {
     padding: 0.5rem;
     margin-bottom: 2vh;
+}
+
+.remove {
+    background-color: rgb(230, 113, 46);
+    border: none;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    background-image: url("/icon_trash.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 2rem;
+    height: 2rem;
 }
