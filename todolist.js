@@ -1,12 +1,10 @@
 const form = document.querySelector("form");
 const taskInput = document.querySelector("#taskInput");
 const toDo = document.querySelector("#toDo");
-i = 1;
 
 form.onsubmit = function (event) {
   event.preventDefault();
   const newLine = document.createElement("form");
-  newLine.id = `newLine${i}`;
   newLine.classList.add("newLine")
   newLine.style.display = "flex";
   newLine.style.justifyContent = "space-between";
@@ -22,5 +20,4 @@ form.onsubmit = function (event) {
     newLine.remove();
   };
   taskInput.value = "";
-  i++;
 };
