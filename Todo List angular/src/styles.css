@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+h1 {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: blue;
+    color: white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.td_table {
+    color: red;
+    font-weight: bold;
+}
+
+.done {
+    text-decoration: line-through;
+}
