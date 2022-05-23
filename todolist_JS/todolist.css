@@ -41,7 +41,7 @@ form {
   border: none;
   border-radius: 0.2rem;
   text-decoration: none;
-  background-image: url("/icon_send.png");
+  background-image: url("/todolist_JS/icon_send.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -78,7 +78,7 @@ ul {
   border: none;
   border-radius: 0.2rem;
   text-decoration: none;
-  background-image: url("/icon_trash.png");
+  background-image: url("/todolist_JS/icon_trash.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
