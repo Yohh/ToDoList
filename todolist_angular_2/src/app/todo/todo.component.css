@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ajouter {
+    background-color: blue;
+    color: white;
+}
+
+.supprimer {
+    background-color: red;
+    color: white;
+}
