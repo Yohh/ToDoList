@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import "./App.css";
+import { Input } from "./components/Input/Input";
+import { Button } from "./components/Button/Button";
+import { Task } from "./components/Task/Task";
 
 function App() {
+  const [tasks,setTask]=useState([])
+  let currentTask = "";
+  const handleChange = (event) => {
+    return (currentTask = event.target.value);
+  };
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(tasks);
+    setTask([...tasks, currentTask]);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-header">
+        <h1>ToDo List</h1>
+        <form onSubmit={(event) => handleSubmit(event)}>
+          <Input handleChange={handleChange} />
+          <Button />
+        </form>
+        <ul>
+          {tasks.map((elem, index) => (
+            <Task key={`${index}-${elem}`} toDo={elem} />
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
