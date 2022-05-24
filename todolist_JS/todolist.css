@@ -56,7 +56,7 @@ h2 {
   box-shadow: 0 0 1rem rgb(122, 122, 122);
 }
 
-ul {
+#toDo {
   background-color: rgb(240, 155, 59);
   padding: 2rem;
   border-radius: 1rem;

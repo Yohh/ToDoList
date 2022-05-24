@@ -13,7 +13,7 @@ form.onsubmit = function (event) {
     newLine.style.justifyContent = "space-between";
     newLine.style.alignItems = "center";
     toDo.appendChild(newLine);
-    const newTask = document.createElement("li");
+    const newTask = document.createElement("p");
     newTask.innerHTML = taskInput.value;
     newLine.appendChild(newTask);
     const button = document.createElement("input");
